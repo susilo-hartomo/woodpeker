@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "twitter_clone",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "twitter_clone_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "wmfefgouemkzze",
+    "password": "b03533368f4ba472353502b894e2f195d48d5fa53bb79cbc271ae380738f8f77",
+    "database": "d90csmffo3dqg0",
+    "host": "ec2-54-197-254-117.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

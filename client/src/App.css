@@ -1,0 +1,140 @@
+body{
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar-component {
+  background-color: #ffffff;
+}
+
+/* VH = Viewport Height */
+/* VW = Viewport Width */
+.maincontent-first {
+  background-color: #f0f0f0;
+  height: calc(100vh - 56px);
+  padding: 1rem;
+}
+.maincontent-component {
+  max-height: calc(100vh - 104px );
+  margin-right: 1rem;
+}
+.search-bar {
+  border-bottom: 1px solid #ccc;
+}
+.tweets-list {
+  height: calc(100% - 145px );
+  overflow-y: scroll;
+}
+/* width */
+.tweets-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.tweets-list::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: .5rem;
+}
+ 
+/* Handle */
+.tweets-list::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  /* border-radius: .5rem; */
+}
+
+/* Handle on hover */
+.tweets-list::-webkit-scrollbar-thumb:hover {
+  background: #17a2b8; 
+}
+
+.follow-list, .tag-list{
+  height: calc(81vh/2);
+  background: #fff;
+  border-radius: 0.35rem;
+  
+}
+.follow-list .follow-scroll {
+  max-height: 30vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.follow-scroll::-webkit-scrollbar {
+width: 10px;
+}
+.follow-scroll::-webkit-scrollbar-track {
+  background: #fff; 
+}
+.follow-scroll::-webkit-scrollbar-thumb {
+  background: #fff; 
+}
+
+/* Handle on hover */
+.follow-scroll::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
+.user-name{
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.tweets-list > .row {
+  margin-bottom: 1.35rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.comments-list {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.edit-icon{
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: .35rem;
+  color: #212529;
+}
+.edit-icon:hover {
+  color: #17a2b8;
+}
+.comment-bar span i{
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: rgba(128,128,128,1);
+}
+.red-heart {
+  color: red;
+}
+
+.auth {
+  height: 100vh;
+}
+@keyframes start-page {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100%{ 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.auth-login {
+  animation-name: start-page ;
+  animation-duration: 0.5s;
+}
+
+.imglogin {
+  background: #000;
+}
+
+.upload-media {
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(128,128,128,0.1);
+  border-radius: 10px;
+}
+
+.upload-media p {
+  margin-bottom: 0;
+}
+.icon-color {
+  color: rgba(128,128,128,1);
+
+}
